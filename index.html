@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="hero">
+            <h1 class="title">Gerador de Senhas</h1>
+            <p class="subtitle">Utilize nosso gerador de senhas online para criar senhas forte e seguras</p>
+        </section>
+    </header>
+    <main>
+        <section class="box">
+            <div class="password">
+                <div class="text">
+                    <input type="text" name="password" id="password">
+                </div>
+                <div class="actions">
+                    <button id="copy-1" title="copiar">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                    <button class="renew" title="gerar">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </button>
+                </div>
+            </div>
+
+            <input type="range" name="password-length" id="password-length" value="16" min="4" max="64">
+
+            <button id="copy-2">Copiar senha</button>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
